@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="keywords" content="HTML, CSS, JavaScript" />
+  <meta name="author" content="Willy Chen" />
+
+  <script>
+    function addsport() {
+      var sport_list = document.getElementById("sport_list");
+      var sport = document.getElementById("sport");
+      sport_list.innerHTML += "<li>" + sport.value + "</li>";
+    }
+    function addhobby() {
+      var hobby_list = document.getElementById("hobby_list");
+      var hobby = document.getElementById("hobby");
+      hobby_list.innerHTML += "<li>" + hobby.value + "</li>"
+    }
+  </script>
+</head>
+<body>
+  <!--<button onclick="document.write('<p>pls</p>');">go fuck yourself</button>-->
+  <p>
+    Your favor sports:<input id="sport" type="text"/>
+    <button onclick="addsport()">add</button>
+  </p>
+  <ul id="sport_list"></ul>
+  <p>
+    Your hobbies:<input id="hobby" type="text"/>
+    <button onclick="addhobby()">add</button>
+  </p>
+  <ul id="hobby_list"></ul>
+</body>
+</html>
